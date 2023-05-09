@@ -1,12 +1,12 @@
 import "./App.css";
-import Cars from "./components/Cars";
+
 import Mycars from "./components/Mycars";
 
 function App() {
   return (
     <div className="App">
-      <Mycars />
-      <Cars />
+      <Mycars titre='Le catalogue de voitures' />
+      
     </div>
   );
 }

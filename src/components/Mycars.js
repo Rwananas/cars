@@ -1,7 +1,14 @@
-function Mycars() {
+import Cars from "../components/Cars";
+
+
+function Mycars(props) {
   return (
     <div>
-      <h1>hello world Mycars</h1>
+      <h1>{props.titre}</h1>
+      <Cars marque='ford' couleur='rouge' />
+      <Cars marque='fiat' couleur='' />
+      <Cars marque='' couleur='' />
+      
     </div>
   );
 }
