@@ -1,11 +1,11 @@
 import "./App.css";
-
 import Mycars from "./components/Mycars";
 
 function App() {
+  let cars=["Ford","Fiat","Audi"]
   return (
     <div className="App">
-      <Mycars titre='Le catalogue de voitures' />
+      <Mycars cars={cars} />
       
     </div>
   );
