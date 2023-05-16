@@ -1,7 +1,17 @@
-const MyHeader =(props)=>{
-    return(
-        <h1 style={{color: props.textColor }} >{props.titre}</h1>
-    )
-}
+const MyHeader = (props) => {
 
-export default MyHeader
+    const noCopy=()=>{ alert('merci de ne pas copier le texte')} 
+    const addStyle=(event)=>{
+        event.target.classList.toggle('styled')
+    }
+  return (
+    <>
+      <h1 onMouseOver={addStyle} style={{ color: props.textColor }}>{props.titre}</h1>
+      <p onCopy={noCopy}>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem nobis
+      </p>
+    </>
+  );
+};
+
+export default MyHeader;
